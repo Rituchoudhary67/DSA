@@ -8,3 +8,5 @@ Problem sloving
 flowchar :- is a diagramatic representation of flow of program
 Pseudocode :- way of representing logic in generaic way
 
+Day 2
+writing first 
