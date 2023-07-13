@@ -9,4 +9,19 @@ flowchar :- is a diagramatic representation of flow of program
 Pseudocode :- way of representing logic in generaic way
 
 Day 2
-writing first 
+writing first code in c++
+int main() = yaha se sab kuch start hota hota
+cout = printing
+#include<iostream> = file jo already define hai
+using namespace std
+endl = enter?new line
+
+first code
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    cout << "Namaste Dunia :-)" <<endl;
+    
+}
