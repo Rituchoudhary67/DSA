@@ -25,3 +25,12 @@ int main()
     cout << "Namaste Dunia :-)" <<endl;
     
 }
+
+# typecasting :- converting one from of data type in another from
+
+    int a1 = 'a';
+    cout << a1 << endl;
+    char ch1 = 123456;
+    cout << ch1 << endl;
+    char ch3 = 98;
+    cout << ch3 <<endl;
