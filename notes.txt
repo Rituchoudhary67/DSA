@@ -1,1 +1,10 @@
 day 1
+Problem sloving
+1.understanding
+2.given values
+3.approach
+4.program
+
+flowchar :- is a diagramatic representation of flow of program
+Pseudocode :- way of representing logic in generaic way
+
