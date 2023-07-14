@@ -34,3 +34,10 @@ int main()
     cout << ch1 << endl;
     char ch3 = 98;
     cout << ch3 <<endl;
+
+Day 3 
+condition and loops
+cin is used to take input from user
+-> if
+-> else if
+-> else    
