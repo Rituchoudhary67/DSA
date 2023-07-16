@@ -72,6 +72,19 @@ int main()
   // }
   // cout<<a;
   
+  check weather the given input is in lowercase,uppercase or a numeric values
+
+  char ch ;
+  cin >> ch;
+  if(ch >='a' && ch<='z'){
+    cout << "This is lower case" << endl;
+  }
+  else if (ch >= 'A' && ch <='Z'){
+    cout << "This is Upper case" << endl;
+  }
+  else if (ch >= '0' && ch<= '9'){
+    cout << "This is Numeric" << endl;
+  }
   
   
 }
