@@ -86,6 +86,27 @@ int main()
     cout << "This is Numeric" << endl;
   }
   
+  // print 1 to n
+  // int n;
+  // cin>>n;
+  // int sum = 0;
+  // int i = 1;
+  // while(i<=n){
+  //   sum = sum + i;
+  //   i = i+ 1;
+  // }
+  // cout <<"sum of 1 to n digit is "<<sum<<endl;
+  
+  //print sum of even numbers
+  int n;
+   cin >> n;
+   int sum = 0;
+   int i=2;
+   while(i<=n) {
+     sum = sum + i;
+     i =i+2;
+   }
+  cout<<sum<<endl;
   
 }
 
