@@ -1,0 +1,29 @@
+1. Rotate by 90 degree
+
+GFG : https://www.geeksforgeeks.org/batch/gfg-160-problems/track/matrix-gfg-160/problem/rotate-by-90-degree-1587115621
+
+Solution:
+
+class Solution {
+    // Function to rotate matrix anticlockwise by 90 degrees.
+    static void rotateby90(int mat[][]) {
+        // code here
+        int n = mat.length;
+        int arr[][] = new int[n][n];
+        
+        //copy element into arr
+        for(int i=0; i<n; i++) {
+            for(int j=0; j<n; j++) {
+                arr[i][j] = mat[i][j];
+            }
+        }
+        
+        //swapping
+        for(int i=0; i<n; i++) {
+            for(int j=0; j<n; j++) {
+                int k = (n-1)-i;
+                mat[i][j] = arr[j][k];
+            }
+        }
+    }
+}
