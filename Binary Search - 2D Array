@@ -1,0 +1,37 @@
+Search in a sorted Matrix
+
+https://www.geeksforgeeks.org/batch/gfg-160-problems/track/matrix-gfg-160/problem/search-in-a-matrix-1587115621
+
+code : 
+
+
+
+class Solution {
+    // Function to search a given number in row-column sorted matrix.
+    public boolean searchMatrix(int[][] mat, int x) {
+        // code here 0(n2)
+        for(int i=0; i<mat.length; i++) {
+             for(int j=0; j<mat[0].length; j++) {
+                 if(mat[i][j] == x)return true;
+             }
+         }
+         return false;
+        
+        //binary search -- o(n)
+        int row = 0;
+        int col = mat[0].length-1;
+        
+        while(row < mat.length && col >=0) {
+            if(mat[row][col] == x) {
+                return true;
+            } else if(mat[row][col] < x) {
+                row++;
+            } else {
+                col--;
+            }
+        }
+        return false;
+    }
+}
+
+
