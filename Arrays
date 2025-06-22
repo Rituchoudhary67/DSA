@@ -1,0 +1,33 @@
+1] Majority Element II
+
+link : https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/majority-vote
+
+solution :
+
+class Solution {
+    // Function to find the majority elements in the array
+    public List<Integer> findMajority(int[] nums) {
+        // Your code goes here.
+        int n = nums.length;
+        int oneThird = n/3;
+        
+        HashMap<Integer, Integer> map = new HashMap<>();
+        
+        for(int num:nums) {
+            if(map.containsKey(num)) {
+                map.put(num, map.get(num)+1);
+            } else {
+                map.put(num,1);
+            }
+        }
+        
+        List<Integer> result = new ArrayList<>();
+        
+        for(Map.Entry<Integer,Integer> entry : map.entrySet()) {
+            if(entry.getValue() > oneThird){
+                result.add(entry.getKey());
+            }
+        }
+        return result;
+    }
+}
